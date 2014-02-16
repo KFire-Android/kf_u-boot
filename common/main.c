@@ -460,7 +460,7 @@ void main_loop (void)
 			boot_env = "bootcmd";
 		}
 #if defined(CONFIG_RECOVERYCMD)
-		else if(7 == val){
+		else if(3 == val || 7 == val){
 			printf("Entering into single-use recovery mode !!! \n");
 			fastboot_idme("bootmode 1");
 			val = 1;
